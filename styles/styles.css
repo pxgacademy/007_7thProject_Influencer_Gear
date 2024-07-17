@@ -145,7 +145,7 @@ body {
 
 /* Responsive styles */
 @media screen and (max-width: 576px) {
-  /* nav section styles started */
+  /* nav section */
   #navbar {
     max-width: 576px;
     height: 70px;
@@ -162,4 +162,31 @@ body {
   .menu_icons {
     display: flex;
   }
+
+  /* banner section */
+  #banner_section {
+    width: 100%;
+    row-gap: 15px;
+    flex-direction: column-reverse;
+  }
+
+  .banner_content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .banner_content h1 {
+    font-size: 1.75rem;
+  }
+
+  .banner_content p {
+    font-size: 0.875rem;
+  }
+
+  .banner_img {
+    width: 257px;
+    height: 257px;
+    background-size: cover;
+  }
+
 }
