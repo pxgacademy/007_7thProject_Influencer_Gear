@@ -22,16 +22,19 @@
 }
 
 body {
+  font-family: "Poppins", sans-serif;
+  font-weight: var(--poppins_regular);
+  font-size: 1rem;
+  font-style: normal;
+}
+
+header,
+main {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
   padding: 0px 20px;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  font-weight: var(--poppins_regular);
-  font-size: 1rem;
-  font-style: normal;
-  border: 1px solid rebeccapurple;
 }
 
 .hide {
@@ -259,7 +262,7 @@ body {
   align-items: center;
   column-gap: 95px;
 }
-.featured_img img{
+.featured_img img {
   width: 100%;
 }
 #featured_product h2 {
@@ -288,9 +291,43 @@ body {
   background-color: var(--lightColor);
   color: var(--btnColor);
 }
-
 /* Featured product styles ended */
 
+/* footer section styles started */
+#footer_section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 50px 20px;
+  margin-top: 100px;
+  background-color: rgba(10, 8, 38, 1);
+  color: var(--lightColor);
+  text-align: center;
+}
+
+#footer_section h3 {
+  font-size: 1.5rem;
+  font-weight: var(--poppins_bold);
+  margin-bottom: 5px;
+}
+
+#footer_section p {
+  font-size: 0.875rem;
+  font-weight: var(--poppins_bold);
+  margin-bottom: 5px;
+  color: rgb(217, 219, 225);
+}
+
+.footer_icons {
+  margin-top: 15px;
+}
+.footer_icons a {
+  color: var(--lightColor);
+  margin: 0 10px;
+}
+
+/* footer section styles ended */
 /* Responsive styles */
 @media screen and (max-width: 576px) {
   /* nav section */
@@ -366,14 +403,19 @@ body {
     grid-template-columns: 1fr;
     text-align: center;
   }
-  .featured_img{
+  .featured_img {
     order: 2;
   }
-  .featured_content{
+  .featured_content {
     order: 1;
   }
 
   #featured_product h2 {
     font-size: 1.5rem;
+  }
+
+  /* footer section */
+  #footer_section {
+    margin-top: 50px;
   }
 }
