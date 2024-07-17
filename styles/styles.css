@@ -64,3 +64,64 @@ body {
   color: var(--colorOne);
 }
 /* nav section styles ended */
+
+/* banner section styles started */
+#banner_section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 120px;
+}
+
+.banner_content {
+  width: 50%;
+}
+
+.banner_content h1 {
+  font-size: 3rem;
+  font-weight: var(--poppins_bold);
+  line-height: 135%;
+  color: var(--colorOne);
+}
+
+.banner_content p {
+  font-weight: var(--poppins_semibold);
+  line-height: 150%;
+  color: var(--colorOne);
+  margin: 16px 0px;
+}
+
+.banner_content button {
+  font-weight: var(--poppins_bold);
+  color: var(--lightColor);
+  padding: 10px 20px;
+  border: 1px solid var(--btnColor);
+  border-radius: 40px;
+  background-color: var(--btnColor);
+  transition: 0.3s;
+}
+
+.fa-arrow-right {
+  margin-left: 5px;
+}
+
+.banner_content button:hover {
+  background-color: var(--lightColor);
+  color: var(--btnColor);
+}
+
+.banner_img {
+  width: 50%;
+  background-image: url(../images/Circle_design.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.banner_img img {
+  width: 100%;
+}
+
+/* banner section styles ended */
