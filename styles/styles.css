@@ -34,6 +34,10 @@ body {
   border: 1px solid rebeccapurple;
 }
 
+.hide {
+  display: none;
+}
+
 /* nav section styles started */
 #navbar {
   max-width: 1200px;
@@ -42,6 +46,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  column-gap: 15px;
 }
 
 #navbar h3 {
@@ -49,6 +54,14 @@ body {
   font-size: 1.5rem;
   font-weight: var(--poppins_bold);
 }
+
+.main_menu {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+
 #navbar ul {
   display: flex;
 }
@@ -62,6 +75,10 @@ body {
   text-decoration: none;
   font-weight: var(--poppins_semibold);
   color: var(--colorOne);
+}
+
+.menu_icons {
+  display: none;
 }
 /* nav section styles ended */
 
@@ -125,3 +142,24 @@ body {
 }
 
 /* banner section styles ended */
+
+/* Responsive styles */
+@media screen and (max-width: 576px) {
+  /* nav section styles started */
+  #navbar {
+    max-width: 576px;
+    height: 70px;
+  }
+
+  #navbar h3 {
+    font-size: 1rem;
+  }
+
+  #navbar ul {
+    display: none;
+  }
+
+  .menu_icons {
+    display: flex;
+  }
+}
