@@ -114,7 +114,7 @@ body {
 .banner_content button {
   font-weight: var(--poppins_bold);
   color: var(--lightColor);
-  padding: 10px 20px;
+  padding: 15px 20px;
   border: 1px solid var(--btnColor);
   border-radius: 40px;
   background-color: var(--btnColor);
@@ -132,16 +132,44 @@ body {
 
 .banner_img {
   width: 50%;
-  background-image: url(../images/Circle_design.svg);
+  background-image: url("../images/Circle_design.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
 }
 
 .banner_img img {
   width: 100%;
 }
-
 /* banner section styles ended */
+
+/* sponsor section styles started */
+#sponsor_section {
+  max-width: 1110px;
+  padding: 10px 0px;
+  margin: 0 auto;
+  margin-top: 70px;
+  border: 1px solid;
+  border-image: linear-gradient(90deg,
+  rgba(255,255,255,0),
+  rgba(139, 139, 139, 0.5),
+  rgba(255,255,255,0)) 1;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.sponsor_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.sponsor_img img{
+  width: 80%;
+}
+/* sponsor section styles ended */
 
 /* Responsive styles */
 @media screen and (max-width: 576px) {
@@ -186,7 +214,5 @@ body {
   .banner_img {
     width: 257px;
     height: 257px;
-    background-size: cover;
   }
-
 }
