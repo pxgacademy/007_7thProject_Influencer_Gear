@@ -22,7 +22,7 @@
 }
 
 body {
-  width: 100vw;
+  width: 100%;
   max-width: 1440px;
   margin: 0 auto;
   padding: 0px 20px;
@@ -119,6 +119,7 @@ body {
   border-radius: 40px;
   background-color: var(--btnColor);
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .fa-arrow-right {
@@ -150,10 +151,13 @@ body {
   margin: 0 auto;
   margin-top: 70px;
   border: 1px solid;
-  border-image: linear-gradient(90deg,
-  rgba(255,255,255,0),
-  rgba(139, 139, 139, 0.5),
-  rgba(255,255,255,0)) 1;
+  border-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0),
+      rgba(139, 139, 139, 0.5),
+      rgba(255, 255, 255, 0)
+    )
+    1;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
 }
@@ -166,10 +170,84 @@ body {
   box-sizing: border-box;
 }
 
-.sponsor_img img{
+.sponsor_img img {
   width: 80%;
 }
 /* sponsor section styles ended */
+
+/* products section styles started */
+#product_section {
+  width: 1050px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.product_title {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: var(--poppins_semibold);
+  color: var(--colorOne);
+}
+
+.product_items {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.product_card {
+  width: 330px;
+  height: 475px;
+  padding: 14px;
+  box-sizing: border-box;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+}
+.product_card img {
+  width: 100%;
+}
+.product_card h2 {
+  font-weight: var(--poppins_medium);
+  font-size: 1.75rem;
+  line-height: 143%;
+  color: var(--colorTwo);
+}
+.product_card h4 {
+  font-size: 1.5rem;
+  line-height: 150%;
+  color: var(--colorThree);
+}
+.product_card p {
+  font-weight: var(--poppins_bold);
+  font-size: 0.875rem;
+  line-height: 143%;
+  letter-spacing: 0.02em;
+  color: var(--colorFour);
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.stars > p {
+  margin-left: 15px;
+  font-size: 1.2rem;
+}
+
+.checked {
+  color: var(--btnColor);
+}
+
+.see_more {
+  margin-top: 50px;
+  font-weight: var(--poppins_bold);
+  color: var(--btnColor);
+  text-align: right;
+  cursor: pointer;
+}
+/* products section styles ended */
 
 /* Responsive styles */
 @media screen and (max-width: 576px) {
@@ -214,5 +292,27 @@ body {
   .banner_img {
     width: 257px;
     height: 257px;
+  }
+
+  /* sponsor section */
+  #sponsor_section {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* products section */
+  #product_section {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .product_items {
+    margin-top: 30px;
+    grid-template-columns: 330px;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .see_more{
+    margin-right: 10%;
   }
 }
