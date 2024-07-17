@@ -31,4 +31,36 @@ body {
   font-weight: var(--poppins_regular);
   font-size: 1rem;
   font-style: normal;
+  border: 1px solid rebeccapurple;
 }
+
+/* nav section styles started */
+#navbar {
+  max-width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar h3 {
+  color: var(--colorOne);
+  font-size: 1.5rem;
+  font-weight: var(--poppins_bold);
+}
+#navbar ul {
+  display: flex;
+}
+
+#navbar ul li {
+  list-style: none;
+  margin-left: 30px;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  font-weight: var(--poppins_semibold);
+  color: var(--colorOne);
+}
+/* nav section styles ended */
